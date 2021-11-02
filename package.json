@@ -1,8 +1,14 @@
 {
   "name": "result4",
   "version": "1.0.0",
+  "engines": {
+    "node": "10.19.0"
+  },
   "main": "index.js",
   "repository": "https://github.com/chiziwe-2-0/result4.git",
   "author": "Nikita Olimpiev <nikitaolimpiev97@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  }
 }
