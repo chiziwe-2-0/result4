@@ -2,7 +2,11 @@
   "name": "result4",
   "version": "1.0.0",
   "engines": {
-    "node": "10.19.0"
+    "node": "14.x"
+  },
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
   },
   "main": "index.js",
   "repository": "https://github.com/chiziwe-2-0/result4.git",
