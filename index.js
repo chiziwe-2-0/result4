@@ -1,11 +1,10 @@
 require('http').Server((req, res) => {
-    const author = 'itmo307702'
   
-    res.setHeader('X-Author', author)
+    res.setHeader('X-Author', 'itmo307702')
     res.setHeader('Content-Type', 'application/json')
     res.setHeader('Access-Control-Allow-Origin', '*')
     res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE,OPTIONS')
-    res.setHeader('Access-Control-Allow-Headers', 'x-test,Content-Type,Accept,Access-Control-Allow-Headers')
+    res.setHeader('Access-Control-Allow-Headers', 'x-test, Content-Type, Accept,Access-Control-Allow-Headers')
   
     if (req.url === '/result4/') {
       let body = [];
@@ -20,7 +19,5 @@ require('http').Server((req, res) => {
           'x-body': body,
         }))
       })
-    } else {
-      res.end(author)
-    }
+    } 
   }).listen(process.env.PORT || 5000);
