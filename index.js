@@ -1,6 +1,6 @@
 require('http').Server((req, res) => {
   
-    res.setHeader('X-Author', 'chtest')
+    res.setHeader('X-Author', 'itmo307702')
     res.setHeader('Content-Type', 'application/json')
     res.setHeader('Access-Control-Allow-Origin', '*')
     res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE,OPTIONS')
@@ -8,7 +8,7 @@ require('http').Server((req, res) => {
   
     if (req.url === '/result4/') {
       let body = [];
-      let author = 'chtest';
+      let author = 'itmo307702';
       req.on('data', (chunk) => {
         body.push(chunk);
       }).on('end', () => {
