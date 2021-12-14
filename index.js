@@ -14,7 +14,7 @@ require('http').Server((req, res) => {
         body = Buffer.concat(body).toString();
   
         return res.end(JSON.stringify({
-          'message': author,
+          message: author,
           'x-result': req.headers['x-test'],
           'x-body': body,
         }))
