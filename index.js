@@ -8,13 +8,14 @@ require('http').Server((req, res) => {
   
     if (req.url === '/result4/') {
       let body = [];
+      let author = 'chtest';
       req.on('data', (chunk) => {
         body.push(chunk);
       }).on('end', () => {
         body = Buffer.concat(body).toString();
   
         return res.end(JSON.stringify({
-          message: author,
+          'message': author,
           'x-result': req.headers['x-test'],
           'x-body': body,
         }))
