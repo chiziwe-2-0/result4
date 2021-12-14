@@ -1,6 +1,6 @@
 require('http').Server((req, res) => {
   
-    res.setHeader('X-Author', 'itmo307702')
+    res.setHeader('X-Author', 'chtest')
     res.setHeader('Content-Type', 'application/json')
     res.setHeader('Access-Control-Allow-Origin', '*')
     res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE,OPTIONS')
@@ -14,10 +14,10 @@ require('http').Server((req, res) => {
         body = Buffer.concat(body).toString();
   
         return res.end(JSON.stringify({
-          message: author,
+          'message': chtest,
           'x-result': req.headers['x-test'],
           'x-body': body,
         }))
       })
     } 
-  }).listen(process.env.PORT || 5000);
+  }).listen(process.env.PORT || 3000);
